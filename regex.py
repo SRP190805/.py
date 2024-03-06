@@ -17,6 +17,13 @@ s = r.findall("[0-5][0-5]", txt) #this splitting is above the given range for nu
 a = r.findall("[7-9][1-9]", txt) #this splitting is above the given range for numbers 71-99
 t = [x for x in r.findall("[5-7][0-9]", txt) if (s != a)] #now this function will add only those numbers two list which are in 56-70
 
+#now lets do it for characters
+p = r.findall("[a-z]",txt)
+q = r.findall("[A-Z]",txt)
+u = [x for x in r.findall("[A-Z]", txt) if (p != q)]
+
 print(y)
 print(x)
 print(t)
+print(u)
+print("the numbe rof capital letters in string are{}".format(len(u)))
