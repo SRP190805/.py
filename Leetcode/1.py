@@ -7,7 +7,7 @@
 def __init__(nums,target):
     list = []
     for i in range(len(nums)):
-        for j in range(i+1,len(nums)):
+        fhttps://github.com/SRP190805/secretor j in range(i+1,len(nums)):
             if int(nums[i]) + int(nums[j]) == target:
                 list += (i,j)
     return list
